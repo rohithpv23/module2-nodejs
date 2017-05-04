@@ -2,7 +2,7 @@ exports.home=function(req,res){
   res.render('index',{
     sitename:'I Love My City',
     title:'I Love My City',
-    headline:'Arunkumar - module 2 assignment using ejs',
+    headline:'Rohith - module 2 assignment using ejs',
   });
 }
 
@@ -10,7 +10,7 @@ exports.city=function(req,res){
     var cityName=req.params.city;
     var title,heading,sitename;
     var imageCount=4;
-    
+
 
     if(cityName === 'chennai'){
        title="Chennai";
@@ -28,7 +28,7 @@ exports.city=function(req,res){
        title="Ooty";
        heading="Udagamandalam and abbreviated as Udhagai and Ooty is a town and municipality in the Indian state of Tamil Nadu. It is located 80 km north of Coimbatore and is the capital of the Nilgiris district. It is a popular hill station located in the Nilgiri Hills.";
     }
-    
+
     sitename = title +' | I Love My City';
     res.render('city',{
         sitename:sitename,
